@@ -1,0 +1,114 @@
+{
+	"livros": [
+		{
+			"titulo": "Harry Potter e a Pedra Filosofal",
+			"autor": "J. K. Rowling",
+			"genero": 1
+		},
+		{
+			"titulo": "Harry Potter e a Câmara Secreta",
+			"autor": "J. K. Rowling",
+			"genero": 1
+		},
+		{
+			"titulo": "Harry Potter e o prisioneiro de Azkaban",
+			"autor": "J. K. Rowling",
+			"genero": 1
+		},
+		{
+			"titulo": "Harry Potter e o Cálice de Fogo",
+			"autor": "J. K. Rowling",
+			"genero": 1
+		},
+		{
+			"titulo": "Harry Potter e a Ordem da Fênix",
+			"autor": "J. K. Rowling",
+			"genero": 1
+		},
+		{
+			"titulo": "Harry Potter e o enigma do príncipe",
+			"autor": "J. K. Rowling",
+			"genero": 1
+		},
+		{
+			"titulo": "Harry Potter e as Relíquias da Morte",
+			"autor": "J. K. Rowling",
+			"genero": 1
+		},
+		{
+			"titulo": "O Senhor dos Anéis: a Sociedade do Anel",
+			"autor": "J. R. R. Tolkien",
+			"genero": 1
+		},
+		{
+			"titulo": "O Senhor dos Anéis: as duas torres",
+			"autor": "J. R. R. Tolkien",
+			"genero": 1
+		},
+		{
+			"titulo": "O Senhor dos Anéis: o retorno do rei",
+			"autor": "J. R. R. Tolkien",
+			"genero": 1
+		},
+		{
+			"titulo": "O Hobbit",
+			"autor": "J. R. R. Tolkien",
+			"genero": 1
+		},
+		{
+			"titulo": "O Silmarillion",
+			"autor": "J. R. R. Tolkien",
+			"genero": 1
+		},
+		{
+			"titulo": "As crônicas de gelo e fogo: a guerra dos tronos",
+			"autor": "George R. R. Martin",
+			"genero": 1
+		},
+		{
+			"titulo": "As crônicas de gelo e fogo: a fúria dos reis",
+			"autor": "George R. R. Martin",
+			"genero": 1
+		},
+		{
+			"titulo": "As crônicas de gelo e fogo: a tormenta de espadas",
+			"autor": "George R. R. Martin",
+			"genero": 1
+		},
+		{
+			"titulo": "As crônicas de gelo e fogo: o festim dos corvos",
+			"autor": "George R. R. Martin",
+			"genero": 1
+		},
+		{
+			"titulo": "As crônicas de gelo e fogo: a dança dos dragões",
+			"autor": "George R. R. Martin",
+			"genero": 1
+		},
+		{
+			"titulo": "O rei do inverno",
+			"autor": "Bernard Cornwell",
+			"genero": 1
+		},
+		{
+			"titulo": "O inimigo de Deus",
+			"autor": "Bernard Cornwell",
+			"genero": 1
+		},
+		{
+			"titulo": "Excalibur",
+			"autor": "Bernard Cornwell",
+			"genero": 1
+		},
+		{
+			"titulo": "O nome do vento",
+			"autor": "Patrick Rothfuss",
+			"genero": 1
+		},
+		{
+			"titulo": "O temor do sábio",
+			"autor": "Patrick Rothfuss",
+			"genero": 1
+		}	
+	]
+}

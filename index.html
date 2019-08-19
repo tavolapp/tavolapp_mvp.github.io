@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2016 Google Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<html ng-app="tavola">
+<head>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <!-- Material Design Theming -->
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+  <!-- Import and configure the Firebase SDK -->
+  <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+  <!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+  <!-- <script src="/__/firebase/6.3.5/firebase-auth.js"></script> -->
+  <!-- <script src="/__/firebase/init.js"></script> -->
+</head>
+<body ng-controller="mvp">
+<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+  <!-- Header section containing title -->
+  <!-- <header class="mdl-layout__header mdl-color-text--white mdl-color--light-blue-700">
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
+      <div class="mdl-layout__header-row mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--8-col-desktop">
+        <a href="/"><h3>Tavola App</h3></a>
+      </div>
+    </div>
+  </header> -->
+
+
+	<style>
+		.livro {
+			margin-bottom: 10px;
+		}
+		.titulo {
+			font-size: 18px;
+			margin: 0;
+		}
+		.autor {
+			font-size: 16px;
+			margin: 0;
+			font-style: italic;
+    	line-height: 1em;
+		}
+	</style>
+  <main class="mdl-layout__content mdl-color--grey-100">
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
+
+      <!-- Container for the demo -->
+      <div id="auth" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+      	<div ng-if="!logged">
+	        <div class="mdl-card__title mdl-color--light-blue-600 mdl-color-text--white">
+	          <h2 class="mdl-card__title-text">Identificação</h2>
+	        </div>
+	        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+	          <p>Informe suas credenciais nos campos abaixo para identificar-se ou criar uma conta</p>
+
+	          <input class="mdl-textfield__input" style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>
+	          &nbsp;&nbsp;&nbsp;
+	          <input class="mdl-textfield__input" style="display:inline;width:auto;" type="password" id="password" name="password" placeholder="Senha"/>
+	          <br/><br/>
+	          <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin" ng-click="svcFirebase().signIn()">Sign In</button>
+	          &nbsp;&nbsp;&nbsp;
+	          <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup" ng-click="svcFirebase().handleSignUp()">Sign Up</button>
+	          &nbsp;&nbsp;&nbsp;
+	          <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email" ng-click="svcFirebase().sendEmailVerification()">Send Email Verification</button>
+	          &nbsp;&nbsp;&nbsp;
+	          <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email" ng-click="svcFirebase().sendPasswordReset()">Send Password Reset Email</button>
+	        </div>
+      	</div>
+
+      	<div id="userflow" ng-if="logged">
+	        <div class="mdl-card__title mdl-color--light-blue-600 mdl-color-text--white">
+	          <h2 class="mdl-card__title-text">Bem vindo {{user().email}}</h2>
+	        </div>
+	        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+	          <p>Informe suas credenciais nos campos abaixo para identificar-se ou criar uma conta</p>
+
+	          <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin" ng-click="svcFirebase().signOut()">Sign Out</button>
+	          &nbsp;&nbsp;&nbsp;
+	        </div>
+      	</div>
+      </div>
+
+      <section ng-if="logged" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+        <div class="mdl-card__title mdl-color--light-blue-600 mdl-color-text--white">
+          <h2 class="mdl-card__title-text">Estante</h2>
+        </div>
+	        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+	          <p>Aqui estão todos os seus livros favoritos</p>
+			      	<!-- estante -->
+			      	<div id="estante">
+			      		<ul id="livros" ng-show="estante.lista.length">
+			      			<li class="livro" ng-repeat="livro in estante.lista">
+			      				<button ng-click="estante.remover(livro)">Remover da estante</button>
+			      				<h1 class="titulo" ng-bind="livro.titulo"></h1>
+			      				<h2 class="autor" ng-bind="livro.autor"></h2>
+			      				<article id="reviews"></article>
+			      			</li>
+			      		</ul>
+			      		<div ng-show="!estante.lista.length">
+			      			<p>Sua estante está vazia</p>
+			      		</div>
+			      	</div>
+			      	<!-- estante -->
+	        </div>
+      </section>
+
+      <section ng-if="logged" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+        <div class="mdl-card__title mdl-color--light-blue-600 mdl-color-text--white">
+          <h2 class="mdl-card__title-text">Biblioteca</h2>
+        </div>
+	        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+	          <p>Aqui estão todos os livros da base de dados</p>
+			      	<!-- estante -->
+			      	<div id="biblioteca">
+			      		<ul id="livros">
+			      			<li class="livro" ng-repeat="livro in livros.lista">
+			      				<button ng-click="estante.adicionar(livro)">Favoritar</button>
+			      				<h1 class="titulo" ng-bind="livro.titulo"></h1>
+			      				<h2 class="autor" ng-bind="livro.autor"></h2>
+			      				<article id="reviews"></article>
+			      			</li>
+			      		</ul>
+			      	</div>
+			      	<!-- estante -->
+	        </div>
+      </section>
+    </div>
+  </main>
+</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+	<script src="setup.js"></script>
+	<script src="tools.js"></script>
+	<script src="svcFirebase.js"></script>
+	<script src="mvp.js"></script>
+</body>
+</html>

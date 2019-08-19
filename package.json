@@ -1,0 +1,23 @@
+{
+  "name": "mvp",
+  "version": "0.0.1",
+  "description": "Este é um MVP e não deve ser utilizado como suporta para o produto final depois de validado",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tavolapp/mvp.git"
+  },
+  "author": "jardelvdm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tavolapp/mvp/issues"
+  },
+  "homepage": "https://github.com/tavolapp/mvp#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "firebase": "^6.4.0"
+  }
+}
