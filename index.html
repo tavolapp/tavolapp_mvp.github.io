@@ -105,10 +105,30 @@ limitations under the License.
 			      	<div id="estante">
 			      		<ul id="livros" ng-show="estante.lista.length">
 			      			<li class="livro" ng-repeat="livro in estante.lista">
+			      				<button ng-click="livros.avaliar(livro)">Avaliar</button>
 			      				<button ng-click="estante.remover(livro)">Remover da estante</button>
 			      				<h1 class="titulo" ng-bind="livro.titulo"></h1>
 			      				<h2 class="autor" ng-bind="livro.autor"></h2>
-			      				<article id="reviews"></article>
+			      				<div id="progresso">
+			      					
+			      					meu progresso: <input type="range" min="0" max="{{livro.paginas}}" step="1" value="0" ng-init="livro.pagina = 0" ng-model="livro.pagina"> {{noDecimals(livro.pagina / livro.paginas * 100)}}% (página: {{livro.pagina}})
+			      				</div>
+			      				<article id="reviews">
+			      					<div ng-if="livro.avaliacoes">
+			      						<button ng-click="mostraAvaliacoes(livro)">
+			      							{{!livro.verAvaliacoes ? 'ver':'ocultar'}} {{avaliacoesDisponiveis(livro).length}} {{avaliacoesDisponiveis(livro).length > 1 ? 'avaliações' : 'avaliação'}}
+			      						</button>
+
+			      						<ul ng-show="livro.verAvaliacoes">
+			      							<li ng-repeat="avaliacao in avaliacoesDisponiveis(livro)">
+			      								progresso do avaliador: {{noDecimals(avaliacao.pagina / livro.paginas * 100)}}% (página: {{avaliacao.pagina}}) <br>
+			      								{{avaliacao.conteudo}}
+			      								<hr>
+			      							</li>
+			      						</ul>
+			      					</div>
+			      					<div ng-if="!livro.avaliacoes">Não há avaliações para este livro. Seja o primeiro.</div>
+			      				</article>
 			      			</li>
 			      		</ul>
 			      		<div ng-show="!estante.lista.length">
@@ -132,7 +152,6 @@ limitations under the License.
 			      				<button ng-click="estante.adicionar(livro)">Favoritar</button>
 			      				<h1 class="titulo" ng-bind="livro.titulo"></h1>
 			      				<h2 class="autor" ng-bind="livro.autor"></h2>
-			      				<article id="reviews"></article>
 			      			</li>
 			      		</ul>
 			      	</div>

@@ -9,4 +9,5 @@ tavola.service('tools', [function(){
             scope.$apply(fn);
         }
     }; // end of fn.safeApply
+    this.randomNumber = (min,max) => Math.floor(Math.random() * (max - min)) + min;
 }]);

@@ -1,114 +1,616 @@
 {
 	"livros": [
-		{
-			"titulo": "Harry Potter e a Pedra Filosofal",
-			"autor": "J. K. Rowling",
-			"genero": 1
-		},
-		{
-			"titulo": "Harry Potter e a Câmara Secreta",
-			"autor": "J. K. Rowling",
-			"genero": 1
-		},
-		{
-			"titulo": "Harry Potter e o prisioneiro de Azkaban",
-			"autor": "J. K. Rowling",
-			"genero": 1
-		},
-		{
-			"titulo": "Harry Potter e o Cálice de Fogo",
-			"autor": "J. K. Rowling",
-			"genero": 1
-		},
-		{
-			"titulo": "Harry Potter e a Ordem da Fênix",
-			"autor": "J. K. Rowling",
-			"genero": 1
-		},
-		{
-			"titulo": "Harry Potter e o enigma do príncipe",
-			"autor": "J. K. Rowling",
-			"genero": 1
-		},
-		{
-			"titulo": "Harry Potter e as Relíquias da Morte",
-			"autor": "J. K. Rowling",
-			"genero": 1
-		},
-		{
-			"titulo": "O Senhor dos Anéis: a Sociedade do Anel",
-			"autor": "J. R. R. Tolkien",
-			"genero": 1
-		},
-		{
-			"titulo": "O Senhor dos Anéis: as duas torres",
-			"autor": "J. R. R. Tolkien",
-			"genero": 1
-		},
-		{
-			"titulo": "O Senhor dos Anéis: o retorno do rei",
-			"autor": "J. R. R. Tolkien",
-			"genero": 1
-		},
-		{
-			"titulo": "O Hobbit",
-			"autor": "J. R. R. Tolkien",
-			"genero": 1
-		},
-		{
-			"titulo": "O Silmarillion",
-			"autor": "J. R. R. Tolkien",
-			"genero": 1
-		},
-		{
-			"titulo": "As crônicas de gelo e fogo: a guerra dos tronos",
-			"autor": "George R. R. Martin",
-			"genero": 1
-		},
-		{
-			"titulo": "As crônicas de gelo e fogo: a fúria dos reis",
-			"autor": "George R. R. Martin",
-			"genero": 1
-		},
-		{
-			"titulo": "As crônicas de gelo e fogo: a tormenta de espadas",
-			"autor": "George R. R. Martin",
-			"genero": 1
-		},
-		{
-			"titulo": "As crônicas de gelo e fogo: o festim dos corvos",
-			"autor": "George R. R. Martin",
-			"genero": 1
-		},
-		{
-			"titulo": "As crônicas de gelo e fogo: a dança dos dragões",
-			"autor": "George R. R. Martin",
-			"genero": 1
-		},
-		{
-			"titulo": "O rei do inverno",
-			"autor": "Bernard Cornwell",
-			"genero": 1
-		},
-		{
-			"titulo": "O inimigo de Deus",
-			"autor": "Bernard Cornwell",
-			"genero": 1
-		},
-		{
-			"titulo": "Excalibur",
-			"autor": "Bernard Cornwell",
-			"genero": 1
-		},
-		{
-			"titulo": "O nome do vento",
-			"autor": "Patrick Rothfuss",
-			"genero": 1
-		},
-		{
-			"titulo": "O temor do sábio",
-			"autor": "Patrick Rothfuss",
-			"genero": 1
-		}	
-	]
+    {
+      "titulo": "Harry Potter e a Pedra Filosofal",
+      "autor": "J. K. Rowling",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Harry Potter e a Câmara Secreta",
+      "autor": "J. K. Rowling",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Harry Potter e o prisioneiro de Azkaban",
+      "autor": "J. K. Rowling",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Harry Potter e o Cálice de Fogo",
+      "autor": "J. K. Rowling",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Harry Potter e a Ordem da Fênix",
+      "autor": "J. K. Rowling",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Harry Potter e o enigma do príncipe",
+      "autor": "J. K. Rowling",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Harry Potter e as Relíquias da Morte",
+      "autor": "J. K. Rowling",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "O Senhor dos Anéis: a Sociedade do Anel",
+      "autor": "J. R. R. Tolkien",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "O Senhor dos Anéis: as duas torres",
+      "autor": "J. R. R. Tolkien",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "O Senhor dos Anéis: o retorno do rei",
+      "autor": "J. R. R. Tolkien",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "O Hobbit",
+      "autor": "J. R. R. Tolkien",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "O Silmarillion",
+      "autor": "J. R. R. Tolkien",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "As crônicas de gelo e fogo: a guerra dos tronos",
+      "autor": "George R. R. Martin",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "As crônicas de gelo e fogo: a fúria dos reis",
+      "autor": "George R. R. Martin",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "As crônicas de gelo e fogo: a tormenta de espadas",
+      "autor": "George R. R. Martin",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "As crônicas de gelo e fogo: o festim dos corvos",
+      "autor": "George R. R. Martin",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "As crônicas de gelo e fogo: a dança dos dragões",
+      "autor": "George R. R. Martin",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "O rei do inverno",
+      "autor": "Bernard Cornwell",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "O inimigo de Deus",
+      "autor": "Bernard Cornwell",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Excalibur",
+      "autor": "Bernard Cornwell",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "O nome do vento",
+      "autor": "Patrick Rothfuss",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "O temor do sábio",
+      "autor": "Patrick Rothfuss",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Androides sonham com ovelhas elétricas?",
+      "autor": "Philip K. Dick",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Medo clássico – vol. 1",
+      "autor": "H. P. Lovecraft",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Frankenstein",
+      "autor": "Mary Shelley",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Fogo e sangue",
+      "autor": "George R. R. Martin",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "It: a coisa",
+      "autor": "Stephen King",
+      "genero": "terror",
+      "paginas": 20
+    },
+    {
+      "titulo": "Eragon",
+      "autor": "Christopher Paolini",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Eldest",
+      "autor": "Christopher Paolini",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Brisingr",
+      "autor": "Christopher Paolini",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Herança",
+      "autor": "Christopher Paolini",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Drácula",
+      "autor": "Bran Stoker",
+      "genero": "terror",
+      "paginas": 20
+    },
+    {
+      "titulo": "Eu, robô",
+      "autor": "Isaac Asimov",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Medo clássico",
+      "autor": "Edgar Allan Poe",
+      "genero": "terror",
+      "paginas": 20
+    },
+    {
+      "titulo": "O cavaleiro dos Sete Reinos",
+      "autor": "George R. R. Martin",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "O guia do mochileiro das galáxias",
+      "autor": "Douglas Adams",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "O restaurante no fim do universo",
+      "autor": "Douglas Adams",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "A vida, o universo e tudo mais",
+      "autor": "Douglas Adams",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Até mais, e obrigado pelos peixes",
+      "autor": "Douglas Adams",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Neuromancer",
+      "autor": "William Gibson",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Count Zero",
+      "autor": "William Gibson",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Mona Lisa Overdrive",
+      "autor": "William Gibson",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "A máquina do tempo",
+      "autor": "H. G. Wells",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Fahrenheit 451",
+      "autor": "Ray Bradbury",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Admirável mundo novo",
+      "autor": "Aldous Huxley",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "O conto da aia",
+      "autor": "Margaret Atwood",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "A batalha do apocalipse",
+      "autor": "Eduardo Spohr",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Filhos do Éden: herdeiros de Atlântida",
+      "autor": "Eduardo Spohr",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Filhos do Éden: anjos da morte",
+      "autor": "Eduardo Spohr",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Filhos do Éden: paraíso perdido",
+      "autor": "Eduardo Spohr",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Percy Jackson e os olimpianos: o ladrão de raios",
+      "autor": "Rick Riordan",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Percy Jackson e os olimpianos: o mar de monstros",
+      "autor": "Rick Riordan",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Percy Jackson e os olimpianos: a maldição do titã",
+      "autor": "Rick Riordan",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Percy Jackson e os olimpianos: a batalha do labirinto",
+      "autor": "Rick Riordan",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Percy Jackson e os olimpianos: o último olimpiano",
+      "autor": "Rick Riordan",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "O homem do castelo alto",
+      "autor": "Philip K. Dick",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "A Torre Negra: o pistoleiro",
+      "autor": "Stephen King",
+      "genero": "terror",
+      "paginas": 20
+    },
+    {
+      "titulo": "A Torre Negra: a escolha dos três",
+      "autor": "Stephen King",
+      "genero": "terror",
+      "paginas": 20
+    },
+    {
+      "titulo": "A Torre Negra: as terras devastadas",
+      "autor": "Stephen King",
+      "genero": "terror",
+      "paginas": 20
+    },
+    {
+      "titulo": "A Torre Negra: mago e vidro",
+      "autor": "Stephen King",
+      "genero": "terror",
+      "paginas": 20
+    },
+    {
+      "titulo": "A Torre Negra: lobos de Calla",
+      "autor": "Stephen King",
+      "genero": "terror",
+      "paginas": 20
+    },
+    {
+      "titulo": "A Torre Negra: canção de Suzannah",
+      "autor": "Stephen King",
+      "genero": "terror",
+      "paginas": 20
+    },
+    {
+      "titulo": "A Torre Negra: a Torre Negra",
+      "autor": "Stephen King",
+      "genero": "terror",
+      "paginas": 20
+    },
+    {
+      "titulo": "A Torre Negra: o vento pela fechadura",
+      "autor": "Stephen King",
+      "genero": "terror",
+      "paginas": 20
+    },
+    {
+      "titulo": 1984,
+      "autor": "George Orwell",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Nós",
+      "autor": "Levgueni Zamiatin",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Psicose",
+      "autor": "Robert Bloch",
+      "genero": "terror",
+      "paginas": 20
+    },
+    {
+      "titulo": "Fundação",
+      "autor": "Isaac Asimov",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Fundação e Império",
+      "autor": "Isaac Asimov",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Segunda Fundação",
+      "autor": "Isaac Asimov",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Limites da Fundação",
+      "autor": "Isaac Asimov",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Fundação e Terra",
+      "autor": "Isaac Asimov",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Prelúdio à Fundação",
+      "autor": "Isaac Asimov",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Origens da Fundação",
+      "autor": "Isaac Asimov",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "2001: uma odisseia no espaço",
+      "autor": "Arthur C. Clark",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "O planeta dos macacos",
+      "autor": "Pierre Boulle",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "A guerra dos mundos",
+      "autor": "H. G. Wells",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Laranja mecânica",
+      "autor": "Anthony Burgess",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Jogos vorazes",
+      "autor": "Suzanne Collins",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "Em chamas",
+      "autor": "Suzanne Collins",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "A esperança",
+      "autor": "Suzanne Collins",
+      "genero": "ficcao_cientifica",
+      "paginas": 20
+    },
+    {
+      "titulo": "As crônicas de Nárnia",
+      "autor": "C. S. Lewis",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "As brumas de Avalon",
+      "autor": "Marion Zimmer Bradley",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "O iluminado",
+      "autor": "Stephen King",
+      "genero": "terror",
+      "paginas": 20
+    },
+    {
+      "titulo": "Filhos da degradação: Ordem Vermelha",
+      "autor": "Felipe Castilho",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "O exorcista",
+      "autor": "William Peter Blatty",
+      "genero": "terror",
+      "paginas": 20
+    },
+    {
+      "titulo": "O bebê de Rosemary",
+      "autor": "Ira Levin",
+      "genero": "terror",
+      "paginas": 20
+    },
+    {
+      "titulo": "O silêncio dos inocentes",
+      "autor": "Thomas Harris",
+      "genero": "terror",
+      "paginas": 20
+    },
+    {
+      "titulo": "Hannibal",
+      "autor": "Thomas Harris",
+      "genero": "terror",
+      "paginas": 20
+    },
+    {
+      "titulo": "Dragão vermelho",
+      "autor": "Thomas Harris",
+      "genero": "terror",
+      "paginas": 20
+    },
+    {
+      "titulo": "Duna",
+      "autor": "Frank Herbert",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "O Messias de Duna",
+      "autor": "Frank Herbert",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Os filhos de Duna",
+      "autor": "Frank Herbert",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "O Imperador-Deus de Duna",
+      "autor": "Frank Herbert",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Os hereges de Duna",
+      "autor": "Frank Herbert",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "As herdeiras de Duna",
+      "autor": "Frank Herbert",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "Jurassic Park",
+      "autor": "Michael Crichton",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "O mundo perdido",
+      "autor": "Michael Crichton",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "As crônicas marcianas",
+      "autor": "Ray Bradbury",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "A bússola de ouro",
+      "autor": "Philip Pullman",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "A faca sutil",
+      "autor": "Philip Pullman",
+      "genero": "fantasia",
+      "paginas": 20
+    },
+    {
+      "titulo": "A luneta âmbar",
+      "autor": "Philip Pullman",
+      "genero": "fantasia",
+      "paginas": 20
+    }
+  ]
 }

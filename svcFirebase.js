@@ -111,9 +111,7 @@ tavola.service('svcFirebase', ['$timeout',function(timeout){
        *    out, and that is where we update the UI.
        */
     this.user = undefined;
-    let DB;
-    let DBlivros;
-    this.initApp = scope => {
+    this.initApp = scope => new Promise(res => {
         this.scope = scope;
         // Listening for auth state changes.
         // [START authstatelistener]
@@ -149,17 +147,9 @@ tavola.service('svcFirebase', ['$timeout',function(timeout){
         });
         // [END authstatelistener] 
 
-        DB = firebase.database();
-        DBlivros = DB.ref('livros/');
-        DBlivros.on('value',data => {
-            this.scope.safeApply(()=> {
-                this.scope.livros.lista.push(...
-                    objToArray(data.val())
-                );
-            },error => console.log('error',error))
-
-            })
-    }
+        res(firebase.database())
+    });
 
     this.isLogged = () => this.user ? true : false;
+    this.saveRecord = (base, row) => base.push().set(row);
 }]);
