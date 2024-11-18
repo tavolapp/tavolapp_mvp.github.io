@@ -18,6 +18,6 @@
   "homepage": "https://github.com/tavolapp/mvp#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "firebase": "^6.4.0"
+    "firebase": "^10.9.0"
   }
 }
